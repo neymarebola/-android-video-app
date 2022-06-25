@@ -1,2 +1,2 @@
 # -android-video-app
-![288363962_540933954408430_6049381412225658633_n](https://user-images.githubusercontent.com/108148518/175784461-93474e78-46a3-4715-8f2b-e2a942d2cbc9.jpg | width = 100)
+<img src="https://camo.githubusercontent.com/..." data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="200" height="400" />
