@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Record area"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/btn_start_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Record" />
+
+    <Button
+        android:id="@+id/btn_stop_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Record" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play area"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play" />
+
+    <Button
+        android:id="@+id/btn_stop_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Play" />
+    <Button
+        android:id="@+id/btn_send_server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send to server" />
+
+
+</LinearLayout>

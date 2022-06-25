@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.socketchat">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/chat"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SocketChat"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Activity.SplashScreen"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SearchActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.CommentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.VoiceChatActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.InComingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.ChatDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SignInActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <service android:name=".Service.MyService" />
+    </application>
+
+</manifest>

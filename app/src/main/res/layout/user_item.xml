@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="30dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_toRightOf="@id/profile_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Vu the duong"/>
+        <TextView
+            android:id="@+id/tvNewestMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:text="you have a message"/>
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/tvStatus"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        app:civ_border_width="10dp"
+        app:civ_border_color="#05df29"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="45dp"
+        android:visibility="gone"
+        android:layout_toRightOf="@id/profile_avatar"
+        android:layout_marginLeft="-14dp"
+        android:layout_toEndOf="@id/profile_avatar"/>
+
+    <TextView
+        android:id="@+id/tvCountUnReadMsg"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:background="@drawable/count_msg_bg"
+        android:text="10" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.SearchActivity">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"/>
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="25dp"
+            android:textSize="20dp"
+            android:hint="Search"/>
+        <ImageView
+            android:id="@+id/search_icon_activity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_gg_search"/>
+    </Toolbar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:text="Result"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_rec"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
